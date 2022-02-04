@@ -1,7 +1,7 @@
 # wordlePuzzles
 
-Quick Python project to mess around with deterministically solving word puzzles.
-The code is *designed by intent* to **NOT** solve puzzles which you do not know the solution to, though you can certainly play with it to learn good starting words and strategies.
+Quick Python project to mess around with deterministically solving wordle puzzles.
+The code is *designed by intent* to **ONLY** solve puzzles where you can provide the actual answer (ie: not wordle of the day that you have not solved yet), though you can certainly play with the code to learn good starting words and strategies. The code does not "cheat" and only consults the correct answer to give the algorithm feedback on its guesses.
 
 Dependencies:
 

@@ -137,6 +137,8 @@ def main(args):
 			char = input()
 		if char == 'y':
 			print(", ".join(vocab))
+	else:
+		print("SOLVED!")
 
 def build():
 	prs = argparse.ArgumentParser(description='Dynamic Wordle Solver')

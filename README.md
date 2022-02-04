@@ -13,10 +13,11 @@ Demo:
 
 ```
 $ python3 wordle.py;
+Target word: guess
 1/6 = tarie:  6/25 [1/10422]
-2/6 = belee:  8/25 [1/643]
-3/6 = nosed:  7/25 [1/177]
-4/6 = speck: 10/25 [1/17]
+2/6 = belee:  6/25 [1/643]
+3/6 = nosey:  7/25 [1/119]
+4/6 = specs: 14/25 [1/7]
 5/6 = guess: 25/25 [1/1]
 SOLVED!
 ```

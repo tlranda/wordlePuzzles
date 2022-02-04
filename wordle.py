@@ -24,6 +24,8 @@ def load_vocab(cached=True, cache_target='5lw.txt'):
 			import nltk
 		except ImportError as e:
 			print("You do not appear to have nltk installed for the 5-letter wordlist!")
+			print("You may supply your own via --cache_target or install the nltk module via:")
+			print("$ pip install nltk;")
 			raise e
 		try:
 			words = nltk.corpus.words.words()

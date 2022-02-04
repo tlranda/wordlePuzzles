@@ -122,13 +122,14 @@ def main(args):
 	vocab_size = []
 	history = []
 	guess_score = []
+	entropy_max = args.cscore * 5
 	for attempt in range(1, 1+args.guess_limit):
 		vocab_size.append(len(vocab))
 		alphabet, pos_alphabet, word2scr = vocab_scoring(vocab, args.presence_weight, args.position_weight, args.unique_bias)
 		vocab, guess, score = make_guess(word2scr, vocab, args.solution, args.scoreWeight)
 		history.append(guess)
 		guess_score.append(score)
-		print(f"{attempt}/{args.guess_limit} = {guess}: {score} [1/{vocab_size[-1]}]")
+		print(f"{attempt}/{args.guess_limit} = {guess}: {score:2}/{entropy_max} [1/{vocab_size[-1]}]")
 		if guess == args.solution:
 			break
 	if guess != args.solution:

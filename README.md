@@ -13,15 +13,15 @@ Demo:
 
 ```
 $ python3 wordle.py;
-1/6 = tarie: 6 [1/10422]
-2/6 = belee: 8 [1/643]
-3/6 = nosed: 7 [1/177]
-4/6 = speck: 10 [1/17]
-5/6 = guess: 25 [1/1]
+1/6 = tarie:  6/25 [1/10422]
+2/6 = belee:  8/25 [1/643]
+3/6 = nosed:  7/25 [1/177]
+4/6 = speck: 10/25 [1/17]
+5/6 = guess: 25/25 [1/1]
 SOLVED!
 ```
 
-The format in the output is `attempt`/`limit` = `<guessed word>`: `<entropy score>` [1/`<vocabulary size>`]
+The format in the output is `attempt`/`limit` = `<guessed word>`: `<entropy score>`/`<max entropy>` [1/`<vocabulary size>`]
 
 Entropy scores represent "bits" of information gained by the guess, but are not used as part of scoring the next guess.
 

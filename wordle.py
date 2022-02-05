@@ -31,7 +31,7 @@ def load_vocab(cached=True, cache_target='5lw.txt'):
 		except Exception as e:
 			print("Try this: python -c 'import nltk; ntlk.download()', then download the 'words' package (~5MB, under the 'corpus' tab in the GUI version)")
 			raise e
-		vocab = [_.lower() for _ in words if len(_) == 5]
+		vocab = sorted(set([_.lower() for _ in words if len(_) == 5]))
 		with open(cache_target, 'w') as f:
 			f.write("\n".join(vocab)+"\n")
 	return vocab
